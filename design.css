@@ -1,0 +1,587 @@
+* {
+   box-sizing: border-box;
+   margin: 0;
+   scroll-behavior: smooth;
+   scroll-padding-top: 2rem;
+   list-style: none;
+   text-decoration: none;
+   left: 0;
+   right: 0;
+}
+
+body {
+   left: 0;
+   right: 0;
+   overflow-x: hidden;
+   -ms-overflow-style: scrollbar;
+   overflow-y: scroll;
+   font-size: 15px;
+   color: hsla(212, 49%, 29%, 0.87);
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+.home {
+   background-image: url(image/OIP\ \(3\).jpeg);
+   background-repeat: no-repeat;
+   background-size: 100% 100%;
+   background-position: center center;
+}
+
+.section {
+   background: rgb(0, 0, 0);
+   /* Fallback color */
+   background: #292524be;
+   /* Black background with 0.5 opacity */
+   color: white;
+   height: 100%;
+   width: 100%;
+   text-align: center;
+}
+
+.carttotal {
+   padding: 4px;
+   font-size: 13px;
+   position: absolute;
+   margin-top: -16px;
+   width: 20px;
+   margin-left: 97%;
+   height: 20px;
+   border-radius: 50%;
+   background-color: rgb(146, 12, 34);
+   color: white;
+}
+
+.nav {
+   display: flex;
+   left: 0;
+   right: 0;
+   color: white;
+   justify-content: space-between;
+   padding: 30px 10px;
+   position: fixed;
+   width: 100%;
+}
+
+.section h1 {
+   padding: 300px 20px;
+   font-size: 30px;
+   color: white;
+}
+
+.flex {
+   display: flex;
+   justify-content: space-between;
+}
+
+.bars {
+   height: 5px;
+   width: 200px;
+   margin: 10px;
+   background-color: rgb(197, 30, 30);
+   border-radius: 10rem;
+}
+
+.container {
+   text-align: center;
+   position: relative;
+   left: 0;
+   right: 0;
+}
+
+.container span {
+   color: rgb(190, 122, 20);
+}
+
+.flex section:nth-child(2) {
+   margin: 10px;
+   width: 50%;
+   padding: 40px;
+   text-align: left;
+}
+
+.img:hover {
+   transform: scale(1.1);
+   transition: 1s;
+}
+
+#menu {
+   display: none;
+   font-size: 18px;
+   padding: 0px 20px;
+}
+
+#navbar {
+   text-transform: uppercase;
+   font-weight: 600;
+   width: 40%;
+   display: flex;
+   justify-content: space-between;
+}
+
+#navbar a {
+   color: rgb(6, 107, 102);
+   font-size: 14px;
+   font-weight: 600;
+   justify-content: space-between;
+}
+
+#navbar a:hover,
+#navbar a.active {
+   color: rgba(241, 13, 13, 0.856);
+   font-weight: 600;
+   justify-content: space-between;
+}
+
+.search-form {
+   width: 80%;
+   margin-top: 50px;
+   height: 2rem;
+   display: flex;
+   position: absolute;
+   text-align: center;
+}
+
+#carts {
+   padding: 0px 10px;
+   cursor: pointer;
+   font-size: 19px;
+}
+
+#search-box {
+   transition: 1s;
+   transform-origin: top;
+   transform: scaleY(0);
+}
+
+.search-form input {
+   border: none;
+   outline: none;
+   height: 100%;
+   width: 100%;
+   padding: 20px;
+   font-size: 1rem;
+}
+
+.log {
+   font-size: 18px;
+   margin-top: -10px;
+   border-radius: 1rem;
+   font-weight: 800;
+   color: rgb(210, 30, 210);
+   padding: 0px 5px;
+}
+
+.fo {
+   color: blue;
+}
+
+.icon {
+   display: flex;
+   justify-content: space-between;
+}
+
+#search-box.active {
+   transform: scaleY(1);
+}
+
+#para {
+   animation: para linear 1s;
+   transition: 1s;
+}
+
+@keyframes para {
+   0% {
+      opacity: 0;
+      transform: translateX(-20rem);
+   }
+}
+
+#about {
+   padding: 90px 20px;
+}
+
+#coffee {
+   top: 10%;
+   overflow-y: hidden;
+   background-color: whitesmoke;
+   font-size: 15px;
+   font-weight: 600;
+   display: block;
+   color: rgb(15, 89, 92);
+   position: fixed;
+   transform: scaleY(0);
+   overflow-y: hidden;
+}
+
+#coffee.active {
+   transition: 1s;
+   transform: scaleY(1);
+}
+
+.coffee-box {
+   padding: 20px;
+   background-color: whitesmoke;
+   display: flex;
+   width: 100%;
+}
+
+.coffee-box img {
+   width: 70px;
+   height: 70px;
+   border-radius: 50%;
+   padding: 0px 20px;
+}
+
+#clear-cart {
+   border-radius: 1rem;
+   cursor: pointer;
+   background-color: rgb(133, 15, 15);
+   padding: 7px 20px;
+   color: white;
+}
+
+#clear-cart:hover {
+   word-spacing: .6rem
+}
+
+#btn {
+   font-size: 19px;
+   cursor: pointer;
+}
+
+button {
+   padding: 4px 20px;
+   font-size: 16px;
+   font-weight: 400;
+   color: white;
+   background-color: chocolate;
+   border: none;
+   outline: none;
+   cursor: pointer;
+}
+
+button:hover {
+   letter-spacing: 1px;
+}
+
+.menu {
+   display: flex;
+   flex-wrap: wrap;
+   text-align: center;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.menu-box {
+   padding: 10px;
+   background-color: whitesmoke;
+   margin: 10px;
+}
+
+.menu-box span {
+   text-decoration: line-through;
+   padding: 10px 0px;
+   color: rgb(116, 79, 12);
+}
+
+.menu-box img {
+   width: 300px;
+   height: 300px;
+}
+
+.menu-box:hover {
+   transform: .7s;
+   transform: scale(1.1);
+   background-color: wheat;
+   color: rgb(8, 26, 24);
+}
+
+.products {
+   margin: 60px 10px;
+
+}
+
+.product {
+   display: flex;
+   flex-wrap: wrap;
+   text-align: center;
+   align-items: center;
+   justify-content: space-between;
+
+}
+
+.product-box {
+   padding: 10px;
+   margin: 10px;
+   background-color: whitesmoke;
+}
+
+.product-box img:hover {
+   transform: scale(.7);
+}
+
+.product-box span {
+   text-decoration: line-through;
+   padding: 10px 0px;
+   color: rgb(177, 118, 10);
+}
+
+.product-box img {
+   width: 300px;
+   height: 300px;
+}
+
+.contact {
+   display: flex;
+   text-align: center;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.contact-box {
+   width: 50%;
+   padding: 40px 7px;
+   margin: 10px;
+}
+
+.contact input {
+   border: 2px solid wheat;
+   outline: none;
+   width: 90%;
+   margin: 10px;
+   padding: 7px;
+   background-color: rgb(29, 22, 22);
+   font-size: 1rem;
+}
+
+/* ---------------------footer------------------------------------- */
+.footer {
+   line-height: 1.7rem;
+   width: 100%;
+   left: 0;
+   right: 0;
+   display: grid;
+   text-align: center;
+   background-color: whitesmoke;
+}
+
+.footer1 {
+   padding: 20px;
+   justify-content: space-between;
+   display: flex;
+}
+
+.follow-me {
+   border-radius: 20px;
+   display: flex;
+}
+
+.follow {
+   margin: 10px;
+   color: whitesmoke;
+   padding: 4px;
+   display: flex;
+}
+
+.follow a {
+   color: chocolate;
+   padding: 5px;
+   border: 2px solid;
+   box-shadow: 0px 5px 3px 0px rgb(9, 5, 240);
+}
+
+.follow a:hover {
+   color: rgb(245, 63, 7);
+}
+
+@media (max-width: 960px) {
+   .nav {
+      width: 100%;
+   }
+
+   #navbar {
+      background-color: whitesmoke;
+      font-size: 15px;
+      font-weight: 600;
+      display: block;
+      left: -100%;
+      min-width: 100%;
+      transform: scaleX(0);
+      margin-top: 8%;
+      position: absolute;
+      overflow-y: hidden;
+   }
+
+   #navbar a {
+      padding: 10px;
+      text-align: center;
+      color: rgb(19, 4, 4);
+      background-color: white;
+      margin: 10px;
+      display: block;
+      border-radius: 0.5rem;
+      width: 95%;
+      border: 2px solid black;
+   }
+
+   #navbar.active {
+      left: 0px;
+      transform: scaleX(1);
+      transition: .7s all;
+   }
+
+   #menu {
+      cursor: pointer;
+      color: white important !;
+      font-weight: 600;
+      display: block;
+   }
+
+   .carttotal {
+      padding: 4px;
+      font-size: 13px;
+      position: absolute;
+      margin-top: -16px;
+      width: 20px;
+      margin-left: 94%;
+      height: 20px;
+      border-radius: 50%;
+      background-color: rgb(146, 12, 34);
+      color: white;
+   }
+
+   .flex section {
+      padding: 20px 0px;
+   }
+
+   .flex {
+      flex-wrap: wrap-reverse;
+      padding: 5px;
+   }
+
+   .flex section:nth-child(2) {
+      margin: 10px;
+      width: 100%;
+      padding: 20px;
+      text-align: left;
+   }
+
+   #coffee {
+      width: 70%;
+   }
+
+   .section h1 {
+      padding: 150px 20px;
+      font-size: 30px;
+      color: white;
+   }
+
+   .menu {
+      text-align: center;
+      justify-content: center;
+   }
+
+   .product {
+      text-align: center;
+      justify-content: center;
+   }
+
+   .contact {
+      display: block;
+   }
+
+   .contact-box {
+      width: 100%;
+   }
+
+   .footer1 {
+      width: 100%;
+      display: grid;
+   }
+}
+
+@media (max-width: 660px) {
+   .nav {
+      width: 100%;
+   }
+
+   #navbar {
+      background-color: whitesmoke;
+      font-size: 15px;
+      font-weight: 600;
+      display: block;
+      left: -100%;
+      width: 100%;
+      transform: scaleX(0);
+      margin-top: 8%;
+      position: absolute;
+      overflow-y: hidden;
+   }
+
+   .menu-box img {
+      width: 100%;
+      height: 100%;
+   }
+
+   .container {
+      left: 0;
+      right: 0;
+   }
+
+   .product-box img {
+      width: 100%;
+      height: 100%;
+   }
+
+   .img {
+      width: 100%;
+   }
+}
+
+/* The device with borders */
+/* .smartphone {
+      position: relative;
+      width: 340px;
+      height: 400px;
+      margin: auto;
+      border: 9px rgba(22, 21, 21, 0.26) solid;
+      border-top-width: 30px;
+      border-bottom-width: 60px;
+      border-radius: 36px;
+    } */
+
+/* The horizontal line on the top of the device */
+/* .smartphone:before {
+      content: '';
+      display: block;
+      width: 90px;
+      height: 5px;
+      position: absolute;
+      top: -20px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: white;
+      border-radius: 10px;
+    } */
+
+/* The circle on the bottom of the device */
+/* .smartphone:after {
+      content: '';
+      display: block;
+      width: 40px;
+      cursor: pointer;
+      height: 40px;
+      position: absolute;
+      left: 50%;
+      bottom: -65px;
+      transform: translate(-50%, -50%);
+      background: wheat;
+      border-radius: 50%;
+    } */
+
+/* The screen (or content) of the device */
+/* .smartphone .content {
+      width: 310px;
+      height: 100%;
+      background: white;
+    } */
